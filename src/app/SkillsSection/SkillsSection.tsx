@@ -21,31 +21,31 @@ export const SkillsSection = () => {
 
   const services = [
     {
-      icon: <Code2 className="w-6 h-6" />,
+      icon: <Code2 className="w-5 h-5" />,
       title: "Front-End & UI Development",
       description:
         "Next.js, React, Vue, Angular, TypeScript, JavaScript, Shadcn UI, Material UI, Tailwind CSS",
     },
     {
-      icon: <Palette className="w-6 h-6" />,
+      icon: <Palette className="w-5 h-5" />,
       title: "Design & Animation",
       description:
         "Figma, Framer, Adobe Illustrator, GSAP, Framer Motion, interactive UI components",
     },
     {
-      icon: <Cpu className="w-6 h-6" />,
+      icon: <Cpu className="w-5 h-5" />,
       title: "AI & API Integration",
       description:
         "Anthropic, OpenAI, DeepSeek models, Backend APIs, Nivo charts, Recharts",
     },
     {
-      icon: <Zap className="w-6 h-6" />,
+      icon: <Zap className="w-5 h-5" />,
       title: "Performance & Optimization",
       description:
         "Frontend optimization, accessibility, responsive design, scalable solutions",
     },
     {
-      icon: <Layers className="w-6 h-6" />,
+      icon: <Layers className="w-5 h-5" />,
       title: "Product Engineering",
       description:
         "End-to-end development, user-centric design, cross-functional team leadership",
@@ -57,15 +57,25 @@ export const SkillsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 md:px-12 md:py-16 lg:px-14 lg:py-24">
         {/* Left side - Heading */}
         <div className="flex flex-col justify-center space-y-6">
-          <h2 className="text-muted-foreground text-4xl sm:text-4xl lg:text-5xl leading-tight font-medium">
-            Services that
-            <span className="text-4xl text-black ml-3 sm:text-4xl lg:text-5xl font-medium leading-tight">
-              supercharge your business.
-            </span>
+          <h2 className="relative">
+            <div className="flex flex-col">
+              <div className="flex items-center gap-3">
+                <span className="text-4xl sm:text-4xl lg:text-5xl leading-tight font-semibold text-muted-foreground">
+                  Professional
+                </span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-4xl sm:text-4xl lg:text-5xl leading-tight font-semibold text-black">
+                  Skills & Expertise
+                </span>
+              </div>
+            </div>
+            <div className="absolute -bottom-2 left-0 w-48 h-1">
+              <div className="w-full h-full bg-gradient-to-r from-black/20 via-black to-black/20 rounded-full"></div>
+            </div>
           </h2>
 
           <div className="">
-            <h3 className="text-lg font-medium mb-6">My tech stack</h3>
             <div className="flex flex-wrap gap-4">
               {techStack.map((tech, index) => (
                 <div
@@ -98,16 +108,16 @@ export const SkillsSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 group cursor-pointer p-3 rounded-lg hover:bg-gray-50 transition-all"
+              className="flex items-start gap-4 group cursor-pointer p-3 rounded-lg hover:bg-border transition-all"
             >
-              <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-black shadow-2xl flex items-center justify-center flex-shrink-0">
                 <div className="text-white">{service.icon}</div>
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-medium group-hover:translate-x-1 transition-transform">
                   {service.title}
                 </span>
-                <span className="text-sm text-muted-foreground mt-1">
+                <span className="text-sm text-muted-foreground mt-1  group-hover:translate-x-1 transition-transform">
                   {service.description}
                 </span>
               </div>
