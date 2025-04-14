@@ -178,10 +178,9 @@ export const AboutSection = () => {
                         </h4>
                         <p className="text-sm flex justify-between text-muted-foreground">
                           {item.role}
-
-                          <p className="text-sm text-muted-foreground">
+                          <span className="text-sm text-muted-foreground">
                             {item.period}
-                          </p>
+                          </span>
                         </p>
                       </div>
                     </div>
