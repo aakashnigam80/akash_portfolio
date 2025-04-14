@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTransform, useMotionValue } from "framer-motion";
+import { useMotionValue } from "framer-motion";
 
 export function useScrollPosition() {
   // Create a motion value to track scroll position

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ChevronDownCircle, ChevronUpCircle } from "lucide-react";
 
 interface WorkHistoryItem {
   company: string;
@@ -220,9 +219,9 @@ export const AboutSection = () => {
               </p>
               <p className="text-muted-foreground">
                 I focus on creating interfaces that not only look great but
-                solve real problems. Whether I'm working on AI-powered features,
-                performance tuning, or crafting seamless digital products, my
-                goal is to deliver exceptional user experiences.
+                solve real problems. Whether I&apos;m working on AI-powered
+                features, performance tuning, or crafting seamless digital
+                products, my goal is to deliver exceptional user experiences.
               </p>
             </div>
 
@@ -232,9 +231,9 @@ export const AboutSection = () => {
               </p>
               <p className="text-muted-foreground">
                 My expertise spans from UI/UX design in Figma to frontend
-                development with Next.js, React, and TypeScript. I'm skilled in
-                integrating AI capabilities, optimizing performance, and
-                ensuring accessibility across all devices.
+                development with Next.js, React, and TypeScript. I&apos;m
+                skilled in integrating AI capabilities, optimizing performance,
+                and ensuring accessibility across all devices.
               </p>
             </div>
 

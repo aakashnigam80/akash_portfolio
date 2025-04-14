@@ -36,7 +36,7 @@ export const ContactSection = () => {
             <div className="flex flex-col">
               <div className="flex items-center gap-3">
                 <span className="text-4xl sm:text-4xl lg:text-5xl leading-tight font-semibold text-muted-foreground">
-                  Let's work
+                  Let&apos;s work
                 </span>
               </div>
               <div className="flex items-center">
@@ -50,7 +50,7 @@ export const ContactSection = () => {
             </div>
           </h2>
           <p className="text-muted-foreground">
-            Ready to start your next project? Get in touch and let's create
+            Ready to start your next project? Get in touch and let&apos;s create
             something amazing together.
           </p>
           <Button className="w-fit rounded-full bg-black text-white hover:bg-gray-900 shadow-md text-sm transition-all duration-300 ease-in-out">

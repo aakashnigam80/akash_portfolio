@@ -9,7 +9,7 @@ interface FloatingActionsProps {
 export function FloatingActions({ isVisible }: FloatingActionsProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [shouldRender, setShouldRender] = useState(false);
-  const [isExiting, setIsExiting] = useState(false);
+  const [, setIsExiting] = useState(false);
 
   useEffect(() => {
     if (isVisible) {

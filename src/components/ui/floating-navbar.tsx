@@ -1,6 +1,7 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 "use client";
 import React, { JSX, useState, useEffect } from "react";
-import { motion, AnimatePresence, useScroll } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 

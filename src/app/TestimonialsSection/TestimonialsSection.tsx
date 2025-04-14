@@ -5,9 +5,9 @@ export const TestimonialsSection = () => {
     <div className="border-x border-border max-w-6xl mx-auto py-24">
       <div className="max-w-4xl mx-auto text-center">
         <blockquote className="text-2xl font-semibold leading-tight mb-8">
-          "Working with Akash felt like having a seasoned development partner
-          who truly understood our vision for Layup Labs and brought it to life
-          in ways we hadn't even imagined."
+          &ldquo;Working with Akash felt like having a seasoned development
+          partner who truly understood our vision for Layup Labs and brought it
+          to life in ways we hadn&apos;t even imagined.&rdquo;
         </blockquote>
         <div className="flex items-center justify-center gap-4">
           <div className="w-12 h-12 relative rounded-full overflow-hidden">
