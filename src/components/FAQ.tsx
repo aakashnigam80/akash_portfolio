@@ -52,7 +52,7 @@ const FAQ = () => {
             <h2 className="text-5xl font-bold tracking-tight">
               Your questions
             </h2>
-            <h3 className="text-5xl text-gray-400">answered.</h3>
+            <h3 className="text-5xl text-muted-foreground">answered.</h3>
           </div>
 
           <div className="mt-8 space-y-4">

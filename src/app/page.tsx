@@ -6,6 +6,8 @@ import { TestimonialsSection } from "@/app/TestimonialsSection/TestimonialsSecti
 import { SkillsSection } from "./SkillsSection/SkillsSection";
 import { AboutSection } from "./AboutSection/AboutSection";
 import { FAQSection } from "./FAQSection/FAQSection";
+import { BlogSection } from "./BlogSection/BlogSection";
+import { FooterSection } from "./FooterSection/FooterSection";
 
 export default function Home() {
   return (
@@ -32,6 +34,10 @@ export default function Home() {
       <div className="border-border border-b">
         <FAQSection />
       </div>
+      <div className="border-border border-b">
+        <BlogSection />
+      </div>
+      <FooterSection />
     </div>
   );
 }

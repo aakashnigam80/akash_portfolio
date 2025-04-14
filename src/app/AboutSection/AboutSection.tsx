@@ -101,7 +101,7 @@ export const AboutSection = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/akash.nigam09/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 bg-black/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-black/30 transition-colors"
