@@ -92,7 +92,7 @@ const projects: Project[] = [
 export function ProjectsSection() {
   return (
     <section
-      id="projects"
+      id="work"
       className="border-x border-border max-w-6xl mx-auto py-24"
     >
       <div className="px-6 md:px-12 lg:px-14">

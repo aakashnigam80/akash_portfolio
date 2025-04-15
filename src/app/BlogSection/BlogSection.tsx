@@ -30,7 +30,7 @@ const blogPosts = [
 
 export function BlogSection() {
   return (
-    <div className="border-x border-border max-w-6xl mx-auto">
+    <div id="blog" className="border-x border-border max-w-6xl mx-auto">
       <div className="px-6 py-12 md:px-12 md:py-16 lg:px-14">
         <div className="mb-12">
           <h2 className="text-2xl md:text-5xl font-normal text-muted-foreground mb-2">

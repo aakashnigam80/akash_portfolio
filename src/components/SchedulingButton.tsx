@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { Calendar1 } from "lucide-react";
 
 interface SchedulingButtonProps {
   className?: string;
@@ -13,6 +14,7 @@ interface SchedulingButtonProps {
   showProfileImage?: boolean;
   showPlusYou?: boolean;
   text?: string;
+  showCalendarIcon?: boolean;
 }
 
 export function SchedulingButton({
@@ -21,6 +23,7 @@ export function SchedulingButton({
   size = "sm",
   showProfileImage = true,
   showPlusYou = true,
+  showCalendarIcon = false,
   text = "Book a call with me",
 }: SchedulingButtonProps) {
   useEffect(() => {
@@ -62,9 +65,32 @@ export function SchedulingButton({
             </span>
           </div>
         )}
-        <span className="group-hover:ml-0 transition-all duration-300 ease-in-out whitespace-nowrap">
-          {text}
-        </span>
+
+        {showCalendarIcon && (
+          <>
+            <Calendar1
+              className="shrink-0 absolute left-2"
+              style={{
+                transform: text ? "translateX(14px)" : "translateX(3px)",
+                transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
+            />
+            <span
+              className="text-sm font-medium pl-7"
+              style={{
+                opacity: text ? 1 : 0,
+                transition: "opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
+            >
+              {text}
+            </span>
+          </>
+        )}
+        {!showCalendarIcon && (
+          <span className="group-hover:ml-0 transition-all duration-300 ease-in-out whitespace-nowrap">
+            {text}
+          </span>
+        )}
       </Link>
     </Button>
   );

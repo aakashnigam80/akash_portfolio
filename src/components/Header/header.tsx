@@ -1,29 +1,40 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { FloatingActions } from "../FloatingActions/FloatingActions";
-import { SchedulingButton } from "@/components/SchedulingButton";
+import { ContactForm } from "@/components/ContactForm";
 
 export function Header() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   const navItems = [
     {
       name: "Work",
-      link: "/work",
+      link: "#work",
     },
-
     {
       name: "Blog",
-      link: "/blog",
+      link: "#blog",
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "#contact",
     },
   ];
+
+  const handleNavClick = (e: React.MouseEvent, link: string) => {
+    e.preventDefault();
+    if (link === "#contact") {
+      setIsContactFormOpen(true);
+      return;
+    }
+    const element = document.querySelector(link);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -95,21 +106,20 @@ export function Header() {
                 `}
                 >
                   {item.name === "Contact" ? (
-                    <SchedulingButton
-                      size="sm"
-                      variant="default"
-                      className="px-4 py-1.5 rounded-full border border-black hover:border-muted-foreground hover:bg-white hover:text-black hover:shadow-lg"
-                      showProfileImage={false}
-                      showPlusYou={false}
-                      text="Contact"
-                    />
+                    <button
+                      onClick={(e) => handleNavClick(e, item.link)}
+                      className="px-4 py-1.5 rounded-full border bg-black hover:border-muted-foreground hover:bg-white  hover:shadow-lg text-sm font-medium transition-all duration-300 text-white cursor-pointer hover:text-black"
+                    >
+                      {item.name}
+                    </button>
                   ) : (
-                    <Link
+                    <a
                       href={item.link}
+                      onClick={(e) => handleNavClick(e, item.link)}
                       className={`text-sm font-medium transition-all duration-300 text-muted-foreground hover:text-black`}
                     >
                       {item.name}
-                    </Link>
+                    </a>
                   )}
                 </li>
               ))}
@@ -118,6 +128,10 @@ export function Header() {
         </div>
       </header>
       <FloatingActions isVisible={isCollapsed && !isHovered} />
+      <ContactForm
+        isOpen={isContactFormOpen}
+        onClose={() => setIsContactFormOpen(false)}
+      />
     </>
   );
 }
