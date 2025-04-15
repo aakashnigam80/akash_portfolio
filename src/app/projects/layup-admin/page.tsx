@@ -5,17 +5,17 @@ import ProjectCTA from "@/app/components/ProjectCTA";
 import { Header } from "@/components/Header/header";
 import { FooterSection } from "@/app/FooterSection/FooterSection";
 
-export default function ProjectPage() {
+export default function LayupAdminPage() {
   const projectData = {
     title: "Layup Admin Panel",
     client: "Layup",
     year: "2024",
     description:
-      "I developed the admin panel for Layup's AI-powered user guidance platform. This comprehensive management interface enables companies to create and manage interactive user experiences, from onboarding flows to feature tours. The platform helps businesses guide their users effectively while reducing support tickets, all through a simple one-line code integration. The challenge was to create an intuitive interface that makes it easy for companies to create engaging, personalized user experiences without requiring technical expertise.",
+      "I developed the admin panel for Layup's AI-powered user guidance platform. This comprehensive management interface enables companies to create and manage interactive user experiences, from onboarding flows to feature tours. The platform helps businesses guide their users effectively while reducing support tickets, all through a simple one-line code integration.",
     scopeOfWork: [
       "UI/UX Design",
       "Frontend Development",
-      "Content Management System",
+      "Content Management",
       "Audience Segmentation",
       "Analytics Dashboard",
       "Feature Tour Builder",
