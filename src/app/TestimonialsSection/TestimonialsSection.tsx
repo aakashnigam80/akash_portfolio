@@ -20,7 +20,9 @@ export const TestimonialsSection = () => {
           </div>
           <div className="text-left">
             <div className="font-medium">Ryan Xue</div>
-            <div className="text-gray-600">Co-founder of Layup Labs</div>
+            <div className="text-muted-foreground">
+              Co-founder of Layup Labs
+            </div>
           </div>
         </div>
       </div>
