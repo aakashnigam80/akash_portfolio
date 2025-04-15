@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Twitter, Linkedin, Github, Instagram } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { WordRotate } from "@/components/magicui/word-rotate";
 import { SchedulingButton } from "@/components/SchedulingButton";
 

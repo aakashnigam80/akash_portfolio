@@ -2,8 +2,6 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion, useTransform } from "framer-motion";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
