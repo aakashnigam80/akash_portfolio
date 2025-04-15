@@ -8,7 +8,7 @@ const blogPosts = [
     date: "Aug 13, 2024",
     author: "Akash Nigam",
     image: "/images/Blog1.png",
-    href: "/blog/product-thinking-secret-to-great-ux",
+    href: "https://medium.com/@akashnigam0911/why-product-thinking-is-the-secret-to-great-ux-5df4231d5479",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const blogPosts = [
     date: "Aug 12, 2024",
     author: "Akash Nigam",
     image: "/images/Blog2.png",
-    href: "/blog/airbnb-leader-ux-design",
+    href: "https://medium.com/@akashnigam0911/how-airbnb-became-a-leader-in-ux-design-1b6dced1c419",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const blogPosts = [
     date: "Aug 11, 2024",
     author: "Akash Nigam",
     image: "/images/Blog3.png",
-    href: "/blog/ui-ux-design-with-ai",
+    href: "https://medium.com/@akashnigam0911/ui-ux-design-with-ai-the-future-is-now-and-its-pretty-cool-beb1cd84158d",
   },
 ];
 
@@ -39,8 +39,10 @@ export function BlogSection() {
           <div className="flex justify-between items-center">
             <h2 className="text-2xl md:text-5xl font-bold">design insights.</h2>
             <Link
-              href="/blog"
+              href="https://medium.com/@akashnigam0911"
               className="text-base hover:opacity-80 transition-opacity flex items-center gap-2"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               View All <span className="text-lg">↗</span>
             </Link>
@@ -53,6 +55,8 @@ export function BlogSection() {
               key={post.id}
               href={post.href}
               className="group rounded-2xl overflow-hidden bg-white shadow-xs border-border border hover:shadow-lg transition-shadow"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <div className="aspect-[16/9] relative bg-[#E8EFF3] overflow-hidden">
                 <Image

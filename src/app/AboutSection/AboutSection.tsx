@@ -31,7 +31,7 @@ export const AboutSection = () => {
   ];
 
   return (
-    <div className="border-x border-border max-w-6xl mx-auto">
+    <div id="about" className="border-x border-border max-w-6xl mx-auto">
       <div className="px-6 py-12 md:px-12 md:py-16 lg:px-14 lg:py-16">
         {/* Main heading at top */}
         <h1 className="text-5xl leading-[1.1] font-medium mb-16">
