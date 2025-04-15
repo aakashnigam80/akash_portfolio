@@ -2,30 +2,10 @@ import ProjectDetail from "@/app/components/ProjectDetail";
 import ProjectContent from "@/app/components/ProjectContent";
 import ProjectTestimonial from "@/app/components/ProjectTestimonial";
 import ProjectCTA from "@/app/components/ProjectCTA";
-import { projects } from "@/app/data/projects";
 import { Header } from "@/components/Header/header";
-import { notFound } from "next/navigation";
 import { FooterSection } from "@/app/FooterSection/FooterSection";
 
-interface ProjectPageProps {
-  params: {
-    id: string;
-  };
-}
-
-export async function generateStaticParams() {
-  return projects.map((project) => ({
-    id: project.id,
-  }));
-}
-
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.id === params.id);
-
-  if (!project) {
-    notFound();
-  }
-
+export default function ProjectPage() {
   const projectData = {
     title: "Layup Admin Panel",
     client: "Layup",
