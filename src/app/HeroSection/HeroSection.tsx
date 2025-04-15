@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion, useTransform } from "framer-motion";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { SchedulingButton } from "@/components/SchedulingButton";
 
 // Define the type for project images
 interface ProjectImage {
@@ -150,30 +151,11 @@ export function HeroSection() {
               them into sales.
             </div>
           </div>
-          <Button
-            asChild
-            size="sm"
+          <SchedulingButton
             className="w-fit rounded-full bg-black text-white hover:bg-gray-900 shadow-md text-sm transition-all duration-300 ease-in-out group overflow-hidden"
-          >
-            <Link href="/contact" className="flex items-center">
-              <Image
-                src="/images/profile.png"
-                alt="Your profile picture"
-                width={28}
-                height={28}
-                className="rounded-full flex-shrink-0"
-              />
-              <div className="flex items-center max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 transition-all duration-800 ease-in-out overflow-hidden whitespace-nowrap">
-                <span className="mr-2 text-white font-medium">+</span>
-                <span className="bg-white text-black rounded-full w-7 h-7 flex items-center justify-center text-xs font-semibold mr-2">
-                  You
-                </span>
-              </div>
-              <span className="group-hover:ml-0 transition-all duration-300 ease-in-out whitespace-nowrap">
-                Book a call with me
-              </span>
-            </Link>
-          </Button>
+            showProfileImage={true}
+            showPlusYou={true}
+          />
         </div>
 
         {/* Right Column: Image Composition */}

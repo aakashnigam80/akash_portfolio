@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FloatingActions } from "../FloatingActions/FloatingActions";
+import { SchedulingButton } from "@/components/SchedulingButton";
 
 export function Header() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -93,16 +94,23 @@ export function Header() {
                   h-[35px] flex items-center justify-center
                 `}
                 >
-                  <Link
-                    href={item.link}
-                    className={`text-sm font-medium transition-all duration-300 ${
-                      item.name === "Contact"
-                        ? "px-4 py-1.5 bg-black text-white rounded-full border border-black  hover:border-muted-foreground hover:bg-white hover:text-black hover:shadow-lg"
-                        : "text-muted-foreground hover:text-black"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
+                  {item.name === "Contact" ? (
+                    <SchedulingButton
+                      size="sm"
+                      variant="default"
+                      className="px-4 py-1.5 rounded-full border border-black hover:border-muted-foreground hover:bg-white hover:text-black hover:shadow-lg"
+                      showProfileImage={false}
+                      showPlusYou={false}
+                      text="Contact"
+                    />
+                  ) : (
+                    <Link
+                      href={item.link}
+                      className={`text-sm font-medium transition-all duration-300 text-muted-foreground hover:text-black`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

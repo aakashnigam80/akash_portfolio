@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Minus, Plus } from "lucide-react";
+import { SchedulingButton } from "@/components/SchedulingButton";
 
 interface FAQItem {
   question: string;
@@ -117,14 +118,14 @@ const FAQ = () => {
               </div>
             </div>
             <div className="mt-4 flex items-center gap-4">
-              <a
-                href="https://cal.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors"
-              >
-                Schedule Now
-              </a>
+              <SchedulingButton
+                size="default"
+                variant="default"
+                className="px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors"
+                showProfileImage={false}
+                showPlusYou={false}
+                text="Schedule Now"
+              />
             </div>
           </div>
         </div>

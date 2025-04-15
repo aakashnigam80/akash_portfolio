@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Twitter, Linkedin, Github, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WordRotate } from "@/components/magicui/word-rotate";
+import { SchedulingButton } from "@/components/SchedulingButton";
 
 export function FooterSection() {
   return (
@@ -34,12 +35,14 @@ export function FooterSection() {
           {/* Call Me */}
           <div>
             <h3 className="text-muted-foreground mb-2">Call Me</h3>
-            <Button
-              asChild
+            <SchedulingButton
+              size="sm"
+              variant="outline"
               className="w-fit rounded-full bg-white text-black hover:bg-gray-200 shadow-md text-sm transition-all duration-300 ease-in-out"
-            >
-              <Link href="/contact">Book Now</Link>
-            </Button>
+              showProfileImage={false}
+              showPlusYou={false}
+              text="Book Now"
+            />
           </div>
 
           {/* Social */}
