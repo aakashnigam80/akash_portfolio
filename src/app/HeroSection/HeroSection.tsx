@@ -97,7 +97,7 @@ export function HeroSection() {
   const imageYRangeStart = useTransform(
     scrollY,
     [0, elementPositions.companies, elementPositions.projects],
-    [0, 50, 700]
+    [0, 0, 0]
   );
 
   const imageScaleRange = useTransform(
@@ -206,15 +206,7 @@ export function HeroSection() {
           <motion.div
             className="absolute w-[68%] aspect-[16/10] bg-white rounded-2xl shadow-lg origin-center overflow-hidden"
             style={{
-              y: useTransform(
-                scrollY,
-                [0, elementPositions.companies, elementPositions.projects],
-                [
-                  projectImages[2].initialStyle.translateY || 0,
-                  (projectImages[2].initialStyle.translateY || 0) + 50,
-                  750,
-                ]
-              ),
+              y: projectImages[2].initialStyle.translateY || 0,
               x: projectImages[2].initialStyle.translateX,
               scale: imageScaleRange,
               opacity: imageOpacityRange,
@@ -242,15 +234,7 @@ export function HeroSection() {
           <motion.div
             className="absolute w-[72%] aspect-[16/10] bg-white rounded-2xl shadow-xl origin-top-right overflow-hidden"
             style={{
-              y: useTransform(
-                scrollY,
-                [0, elementPositions.companies, elementPositions.projects],
-                [
-                  projectImages[3].initialStyle.translateY || 0,
-                  (projectImages[3].initialStyle.translateY || 0) + 50,
-                  800,
-                ]
-              ),
+              y: projectImages[3].initialStyle.translateY || 0,
               x: projectImages[3].initialStyle.translateX,
               scale: imageScaleRange,
               opacity: imageOpacityRange,
@@ -280,15 +264,7 @@ export function HeroSection() {
           <motion.div
             className="absolute w-[75%] bg-black aspect-[16/10] rounded-2xl shadow-2xl origin-top-left overflow-hidden"
             style={{
-              y: useTransform(
-                scrollY,
-                [0, elementPositions.companies, elementPositions.projects],
-                [
-                  projectImages[4].initialStyle.translateY || 0,
-                  (projectImages[4].initialStyle.translateY || 0) + 50,
-                  850,
-                ]
-              ),
+              y: projectImages[4].initialStyle.translateY || 0,
               x: projectImages[4].initialStyle.translateX,
               scale: imageScaleRange,
               opacity: imageOpacityRange,
