@@ -21,7 +21,7 @@ export default function LayupAdminPage() {
       "Feature Tour Builder",
       "Onboarding Flow Creator",
     ],
-    liveSiteUrl: "#",
+    liveSiteUrl: "https://app.layuplabs.ai",
   };
 
   const contentData = {

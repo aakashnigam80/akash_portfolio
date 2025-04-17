@@ -23,7 +23,7 @@ export default function PalisadesSecurityPage() {
       "LLM Integration",
       "Automated Reporting",
     ],
-    liveSiteUrl: "#",
+    liveSiteUrl: "https://app.getpalisades.com",
   };
 
   const contentData = {

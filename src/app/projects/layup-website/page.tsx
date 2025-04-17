@@ -20,7 +20,7 @@ export default function LayupWebsitePage() {
       "Testimonials",
       "Product Integration",
     ],
-    liveSiteUrl: "#",
+    liveSiteUrl: "https://layuplabs.ai",
   };
 
   const contentData = {

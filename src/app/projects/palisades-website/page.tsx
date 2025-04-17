@@ -22,7 +22,7 @@ export default function PalisadesWebsitePage() {
       "Blog Section",
       "User Authentication",
     ],
-    liveSiteUrl: "#",
+    liveSiteUrl: "https://getpalisades.com",
   };
 
   const contentData = {
