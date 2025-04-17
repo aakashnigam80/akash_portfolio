@@ -17,7 +17,7 @@ export const FigmaSection = () => {
           />
           Latest Design Work
         </h2>
-        <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mb-12">
+        <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl mb-12">
           Explore my design process and UI/UX work directly in Figma. This
           showcase demonstrates my approach to creating intuitive, beautiful,
           and functional user interfaces.
