@@ -163,9 +163,10 @@ export default function PalisadesSecurityPage() {
     quote:
       "The Palisades security review platform has transformed our security assessment process. The integration with GitHub, automated threat modeling, and comprehensive reporting capabilities have significantly reduced our review time while improving the quality of our security assessments.",
     author: {
-      name: "Security Engineering Team",
-      role: "Palisades Security",
-      image: "/images/palisades-app/dashboard.png",
+      name: "Srajan Gupta",
+      role: "Founder of Palisades Security",
+      image:
+        "https://media.licdn.com/dms/image/v2/D5603AQHuM47vss8PHw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699121502675?e=1750291200&v=beta&t=Oc9q280b6aET3ITb89GQxblsW8AmWUJLSBFhO0IwSEg",
     },
   };
 

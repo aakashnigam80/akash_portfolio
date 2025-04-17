@@ -106,9 +106,10 @@ export default function LegittAppPage() {
     quote:
       "The application development showcases exceptional technical expertise and attention to detail. The integration of AI features, robust contract management capabilities, and intuitive user interface has transformed our business operations and exceeded our expectations.",
     author: {
-      name: "Legitt AI Leadership",
-      role: "Management Team",
-      image: "/images/legitt-app/dashboard.png",
+      name: "Ravi Baranwal",
+      role: "Founder of Legitt AI",
+      image:
+        "https://media.licdn.com/dms/image/v2/C5603AQHqZzckzM07oQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516284984158?e=1750291200&v=beta&t=rpkUT88Ub2JeHk387-sLYYrDCENXsd25WaZnFND8osU",
     },
   };
 

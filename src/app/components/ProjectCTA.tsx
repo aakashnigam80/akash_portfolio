@@ -7,38 +7,38 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 const happyClients = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
+    name: "Ryan Xue",
+    designation: "Cofounder of Layup Labs",
     image:
-      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+      "https://media.licdn.com/dms/image/v2/D4D03AQFtvyYy_UdW7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689006445726?e=1750291200&v=beta&t=zBSGl0ifK8VsEjVGiu28qXDWd0XXupkHpTwdLeRVBsQ",
   },
   {
     id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
+    name: "Badal Jain",
+    designation: "Cofounder of Layup Labs",
     image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://media.licdn.com/dms/image/v2/C5603AQErLa_6Pqgkew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1660841752766?e=1750291200&v=beta&t=sUdH8wl9knXMGj2S5sul7NSIS_VlwtNJdBOxVQmyuRo",
   },
   {
     id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
+    name: "Srajan Gupta",
+    designation: "Founder of Palisades Security",
     image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://media.licdn.com/dms/image/v2/D5603AQHuM47vss8PHw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699121502675?e=1750291200&v=beta&t=Oc9q280b6aET3ITb89GQxblsW8AmWUJLSBFhO0IwSEg",
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
+    name: "Aman Singh",
+    designation: "Backend Developer at Layup Labs",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://media.licdn.com/dms/image/v2/D5603AQGrhTtRUr1Vbw/profile-displayphoto-shrink_800_800/B56ZW4nMfeHoAg-/0/1742559038340?e=1750291200&v=beta&t=4Jw66b2YSAD398EclruNdeNW6HN92InYKA76psn6118",
   },
   {
     id: 5,
-    name: "Tyler Durden",
-    designation: "Soap Developer",
+    name: "Ravi Baranwal",
+    designation: "CTO at Legitt AI",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+      "https://media.licdn.com/dms/image/v2/C5603AQHqZzckzM07oQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516284984158?e=1750291200&v=beta&t=rpkUT88Ub2JeHk387-sLYYrDCENXsd25WaZnFND8osU",
   },
 ];
 
@@ -47,11 +47,11 @@ const ProjectCTA = () => {
     <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-36 py-24 border-x border-border">
       <div className="bg-white shadow-2xl rounded-3xl p-12 text-center space-y-8">
         {/* Happy Clients Section */}
-        <div className="flex flex-row justify-center items-center gap-4">
+        <div className="flex flex-row justify-center items-center gap-6">
           <div className="flex justify-center">
             <AnimatedTooltip items={happyClients} />
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-start gap-2">
             <div className="flex items-center gap-2">
               {[...Array(5)].map((_, i) => (
                 <svg
@@ -69,8 +69,8 @@ const ProjectCTA = () => {
                 </svg>
               ))}
             </div>
-            <span className="ml-2 text-sm font-medium text-gray-600">
-              99+ Happy clients
+            <span className="text-sm font-medium text-gray-600">
+              Happy Team Members
             </span>
           </div>
         </div>

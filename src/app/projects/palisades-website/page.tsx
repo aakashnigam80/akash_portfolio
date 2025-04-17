@@ -82,9 +82,10 @@ export default function PalisadesWebsitePage() {
     quote:
       "The website perfectly captures our vision of modernizing security reviews through automation. The clear presentation of our features and benefits has significantly improved user engagement and demo requests.",
     author: {
-      name: "Palisades Security Team",
-      role: "Leadership Team",
-      image: "/images/palisades-website/Hero.png",
+      name: "Srajan Gupta",
+      role: "Founder of Palisades Security",
+      image:
+        "https://media.licdn.com/dms/image/v2/D5603AQHuM47vss8PHw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699121502675?e=1750291200&v=beta&t=Oc9q280b6aET3ITb89GQxblsW8AmWUJLSBFhO0IwSEg",
     },
   };
 

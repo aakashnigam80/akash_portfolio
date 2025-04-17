@@ -35,7 +35,7 @@ export function ProjectsSection() {
       className="border-x border-border max-w-6xl mx-auto py-12 sm:py-16 md:py-24"
     >
       <div className="px-4 sm:px-6 md:px-12 lg:px-14">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-medium tracking-tight mb-8 sm:mb-12 md:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-medium tracking-tight mb-12 md:mb-16">
           Latest <span className="text-muted-foreground">Projects</span>
         </h2>
 
@@ -51,7 +51,7 @@ export function ProjectsSection() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className={`flex flex-col ${
                     index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                  } gap-6 sm:gap-8 group cursor-pointer items-center`}
+                  } gap-10 sm:gap-8 group cursor-pointer items-center`}
                 >
                   {/* Image Container */}
                   <div className="flex-1 relative w-full">

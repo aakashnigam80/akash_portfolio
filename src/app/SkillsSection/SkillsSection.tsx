@@ -56,7 +56,7 @@ export const SkillsSection = () => {
     <div className="border-x border-border max-w-6xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-6 py-12 sm:py-16 md:px-12 lg:px-14 lg:py-24">
         {/* Left side - Heading */}
-        <div className="flex flex-col justify-center space-y-4 sm:space-y-6">
+        <div className="flex gap-5 sm:gap-0 flex-col justify-center space-y-4 sm:space-y-6">
           <h2 className="relative">
             <div className="flex flex-col">
               <div className="flex items-center gap-3">

@@ -82,7 +82,8 @@ export default function LayupWebsitePage() {
     author: {
       name: "Ryan Xue",
       role: "Co-founder of Layup Labs",
-      image: "/images/layup-website/hero-image.png",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D03AQFtvyYy_UdW7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689006445726?e=1750291200&v=beta&t=zBSGl0ifK8VsEjVGiu28qXDWd0XXupkHpTwdLeRVBsQ",
     },
   };
 

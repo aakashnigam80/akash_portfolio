@@ -16,7 +16,7 @@ const ProjectTestimonial: React.FC<ProjectTestimonialProps> = ({
   return (
     <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-36 pt-32 pb-12 border-x border-border ">
       <div className="max-w-4xl mx-auto text-center">
-        <blockquote className="text-2xl sm:text-3xl font-medium tracking-tight mb-12">
+        <blockquote className="text-xl sm:text-2xl font-medium tracking-tight mb-12">
           &ldquo;{quote}&rdquo;
         </blockquote>
         <div className="flex items-center justify-center gap-4">

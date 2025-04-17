@@ -89,9 +89,10 @@ export default function LegittWebsitePage() {
     quote:
       "The website perfectly embodies our vision and has significantly enhanced our online presence. The developer's attention to detail, technical expertise, and understanding of our needs resulted in a modern, high-performing website that effectively communicates our value proposition.",
     author: {
-      name: "Legitt AI Team",
-      role: "Management",
-      image: "/images/legittai/hero.png",
+      name: "Ravi Baranwal",
+      role: "Founder of Legitt AI",
+      image:
+        "https://media.licdn.com/dms/image/v2/C5603AQHqZzckzM07oQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516284984158?e=1750291200&v=beta&t=rpkUT88Ub2JeHk387-sLYYrDCENXsd25WaZnFND8osU",
     },
   };
 

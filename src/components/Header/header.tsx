@@ -8,6 +8,7 @@ export function Header() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const navItems = [
     {
@@ -34,11 +35,41 @@ export function Header() {
       setIsContactFormOpen(true);
       return;
     }
+
+    // Check if we're on a project page
+    const isProjectPage = window.location.pathname.includes("/projects/");
+
+    if (isProjectPage) {
+      // Store the target section in localStorage
+      localStorage.setItem("scrollTarget", link);
+      // Navigate to root
+      window.location.href = "/";
+      return;
+    }
+
+    // Handle scrolling on root page
     const element = document.querySelector(link);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    // Check for stored scroll target on component mount
+    const scrollTarget = localStorage.getItem("scrollTarget");
+    if (scrollTarget) {
+      // Clear the stored target
+      localStorage.removeItem("scrollTarget");
+      // Find and scroll to the element
+      const element = document.querySelector(scrollTarget);
+      if (element) {
+        // Small delay to ensure page is loaded
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,6 +82,16 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // 640px is Tailwind's sm breakpoint
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <>
       <header className="fixed top-6 left-0 w-full z-50 flex justify-center">
@@ -58,7 +99,11 @@ export function Header() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           style={{
-            width: isCollapsed && !isHovered ? "230px" : "600px",
+            width: isSmallScreen
+              ? "auto"
+              : isCollapsed && !isHovered
+                ? "230px"
+                : "600px",
             transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
           }}
           className="backdrop-blur-md bg-white/70 rounded-full px-4 py-2 border border-border flex items-center justify-between mx-auto overflow-hidden shadow-lg hover:shadow-xl hover:bg-white/80 transition-all"
@@ -73,7 +118,7 @@ export function Header() {
                 className="object-cover h-full w-full"
               />
             </div>
-            <div className="text-sm font-semibold whitespace-nowrap text-gray-800">
+            <div className="text-sm sm:block hidden font-semibold whitespace-nowrap text-gray-800">
               Akash Nigam
             </div>
             {isCollapsed && !isHovered && (

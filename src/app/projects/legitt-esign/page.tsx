@@ -86,9 +86,10 @@ export default function LegittEsignPage() {
     quote:
       "The e-signature platform showcases exceptional technical innovation. The integration of AI for smart document analysis, blockchain for security, and an intuitive user interface has significantly improved our document signing efficiency and security compliance.",
     author: {
-      name: "Legitt AI Leadership",
-      role: "Executive Team",
-      image: "/images/legitt-esign/hero.png",
+      name: "Ravi Baranwal",
+      role: "Founder of Legitt AI",
+      image:
+        "https://media.licdn.com/dms/image/v2/C5603AQHqZzckzM07oQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516284984158?e=1750291200&v=beta&t=rpkUT88Ub2JeHk387-sLYYrDCENXsd25WaZnFND8osU",
     },
   };
 
