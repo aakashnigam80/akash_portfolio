@@ -116,7 +116,7 @@ export function ProjectsSection() {
                       <span className="px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-normal bg-border text-black rounded-full inline-block">
                         {project.category}
                       </span>
-                      <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+                      <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
                         {project.title}
                       </h3>
                       <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
