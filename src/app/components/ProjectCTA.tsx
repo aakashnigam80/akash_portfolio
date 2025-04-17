@@ -44,14 +44,14 @@ const happyClients = [
 
 const ProjectCTA = () => {
   return (
-    <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-36 py-24 border-x border-border">
-      <div className="bg-white shadow-2xl rounded-3xl p-12 text-center space-y-8">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-12 lg:px-36 py-16 sm:py-24 border-x border-border">
+      <div className="bg-white shadow-2xl rounded-2xl sm:rounded-3xl p-6 sm:p-12 text-center space-y-6 sm:space-y-8">
         {/* Happy Clients Section */}
-        <div className="flex flex-row justify-center items-center gap-6">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
           <div className="flex justify-center">
             <AnimatedTooltip items={happyClients} />
           </div>
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-center sm:items-start gap-2">
             <div className="flex items-center gap-2">
               {[...Array(5)].map((_, i) => (
                 <svg
@@ -59,7 +59,7 @@ const ProjectCTA = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-4 h-4 text-black"
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-black"
                 >
                   <path
                     fillRule="evenodd"
@@ -69,7 +69,7 @@ const ProjectCTA = () => {
                 </svg>
               ))}
             </div>
-            <span className="text-sm font-medium text-gray-600">
+            <span className="text-xs sm:text-sm font-medium text-gray-600">
               Happy Team Members
             </span>
           </div>
@@ -77,10 +77,10 @@ const ProjectCTA = () => {
 
         {/* CTA Text */}
         <div className="space-y-2">
-          <h2 className="text-3xl sm:text-4xl font-medium text-muted-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-muted-foreground">
             Like what you see?
           </h2>
-          <h3 className="text-3xl sm:text-4xl font-medium text-black">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-black">
             Book a free discovery call.
           </h3>
         </div>
