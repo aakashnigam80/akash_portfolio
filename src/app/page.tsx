@@ -21,6 +21,9 @@ export default function Home() {
         <Companies />
       </div>
       <div className="border-border border-b">
+        <AboutSection />
+      </div>
+      <div className="border-border border-b">
         <ProjectsSection />
       </div>
       <div className="border-border border-b">
@@ -32,9 +35,7 @@ export default function Home() {
       <div className="border-border border-b">
         <FigmaSection />
       </div>
-      <div className="border-border border-b">
-        <AboutSection />
-      </div>
+
       <div className="border-border border-b">
         <FAQSection />
       </div>
