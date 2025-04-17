@@ -16,6 +16,10 @@ export function Header() {
       link: "#work",
     },
     {
+      name: "Figma",
+      link: "#figma",
+    },
+    {
       name: "About",
       link: "#about",
     },
@@ -143,7 +147,7 @@ export function Header() {
             style={{
               width: isCollapsed && !isHovered ? "0" : "auto",
               opacity: isCollapsed && !isHovered ? "0" : "1",
-              marginLeft: isCollapsed && !isHovered ? "0" : "64px",
+              marginLeft: isCollapsed && !isHovered ? "0" : "10px",
             }}
           >
             <ul className="flex items-center gap-6">

@@ -5,7 +5,7 @@ import React from "react";
 
 export const FigmaSection = () => {
   return (
-    <div className="border-x border-border max-w-6xl mx-auto">
+    <div id="figma" className="border-x border-border max-w-6xl mx-auto">
       <div className="px-4 sm:px-6 py-8 sm:py-12 md:px-12 md:py-16 lg:px-14 lg:py-16">
         <h2 className="text-3xl flex items-center gap-4 sm:text-4xl font-medium tracking-tight mb-8">
           <Image
@@ -15,7 +15,7 @@ export const FigmaSection = () => {
             height={70}
             className="-ml-4"
           />
-          Design Showcase
+          Latest Design Work
         </h2>
         <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mb-12">
           Explore my design process and UI/UX work directly in Figma. This
