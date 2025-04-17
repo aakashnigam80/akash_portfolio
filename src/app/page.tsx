@@ -4,6 +4,7 @@ import Companies from "./companies/companies";
 import { ProjectsSection } from "@/app/ProjectsSection/ProjectsSection";
 import { TestimonialsSection } from "@/app/TestimonialsSection/TestimonialsSection";
 import { SkillsSection } from "./SkillsSection/SkillsSection";
+import { FigmaSection } from "./FigmaSection/FigmaSection";
 import { AboutSection } from "./AboutSection/AboutSection";
 import { FAQSection } from "./FAQSection/FAQSection";
 import { BlogSection } from "./BlogSection/BlogSection";
@@ -27,6 +28,9 @@ export default function Home() {
       </div>
       <div className="border-border border-b">
         <SkillsSection />
+      </div>
+      <div className="border-border border-b">
+        <FigmaSection />
       </div>
       <div className="border-border border-b">
         <AboutSection />
