@@ -125,27 +125,27 @@ export function HeroSection() {
       className="border-x border-border max-w-6xl mx-auto"
     >
       {/* Main content grid (Text on left, Image on right) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 md:px-12 md:py-16 lg:px-14 lg:py-32">
+      <div className="grid grid-cols-1 h-[900px] lg:h-auto lg:grid-cols-2 gap-4 sm:gap-8 px-4 sm:px-6 py-30 sm:py-16 md:px-12 md:py-16 lg:px-14 lg:py-32">
         {/* Left Column: Text Content */}
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-4 sm:space-y-6">
           <Badge
             variant="outline"
-            className="w-fit border-border py-1.5 px-3 font-semibold rounded-full shadow-sm"
+            className="w-fit border-border py-1 sm:py-1.5 px-2 sm:px-3 text-xs sm:text-sm font-semibold rounded-full shadow-sm"
           >
-            <span className="relative flex h-2 w-2 mr-2">
+            <span className="relative flex h-1.5 sm:h-2 w-1.5 sm:w-2 mr-1.5 sm:mr-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              <span className="relative inline-flex rounded-full h-1.5 sm:h-2 w-1.5 sm:w-2 bg-green-500"></span>
             </span>
             Open to Opportunities
           </Badge>
-          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-medium tracking-tight text-black">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium tracking-tight text-black">
             <span className="text-muted-foreground">Crafting</span> digital
             experiences that{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
               inspire.
             </span>
           </h1>
-          <div className="text-base text-black max-w-md font-normal">
+          <div className="text-sm sm:text-base text-black max-w-md font-normal">
             Product Design Engineer specializing in Figma-to-Code excellence.
             <span className="text-muted-foreground font-normal ml-1">
               Building high-performance web apps with Next.js, React, and
@@ -153,14 +153,14 @@ export function HeroSection() {
             </span>
           </div>
           <SchedulingButton
-            className="w-fit rounded-full bg-black text-white hover:bg-gray-900 shadow-md text-sm transition-all duration-300 ease-in-out group overflow-hidden"
+            className="w-fit rounded-full bg-black text-white hover:bg-gray-900 shadow-md text-xs sm:text-sm transition-all duration-300 ease-in-out group overflow-hidden"
             showProfileImage={true}
             showPlusYou={true}
           />
         </div>
 
         {/* Right Column: Image Composition */}
-        <div className="relative flex items-center justify-center min-h-[300px] md:min-h-0 lg:min-h-[400px] -mr-6 md:-mr-12 lg:-mr-20">
+        <div className="relative flex items-center justify-center min-h-[250px] sm:min-h-[300px] md:min-h-0 lg:min-h-[400px] -mr-4 sm:-mr-6 md:-mr-12 lg:-mr-20">
           {/* Bottom Layer - Blue gradient background */}
           <motion.div
             className="absolute w-[70%] sm:w-[75%] aspect-[16/10] bg-gradient-to-br from-blue-500 via-indigo-400 to-purple-500 rounded-2xl shadow-xl origin-bottom-left"
