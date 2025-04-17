@@ -17,58 +17,137 @@ export interface Project {
 }
 
 export function ProjectsSection() {
+  // Helper function to determine if gradient is dark
+  const isDarkGradient = (gradient: string) => {
+    return (
+      gradient.includes("from-black") ||
+      gradient.includes("from-gray-900") ||
+      gradient.includes("from-zinc-900") ||
+      gradient.includes("from-slate-900") ||
+      gradient.includes("to-black") ||
+      gradient.includes("to-gray-900")
+    );
+  };
+
   return (
     <section
       id="work"
       className="border-x border-border max-w-6xl mx-auto py-24"
     >
       <div className="px-6 md:px-12 lg:px-14">
-        <h2 className="text-4xl sm:text-5xl font-medium tracking-tight mb-12">
-          Latest <span className="text-black">Projects</span>
+        <h2 className="text-4xl sm:text-5xl text-black font-medium tracking-tight mb-16">
+          Latest <span className="text-muted-foreground">Projects</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <Link href={`/projects/${project.id}`} key={project.id}>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="h-[400px] relative overflow-hidden rounded-2xl group cursor-pointer"
-              >
-                {/* Image Container */}
-                <div className="absolute inset-0">
-                  <Image
-                    src={project.image}
-                    alt={project.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  {/* Gradient Overlay */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br backdrop-blur-sm ${project.gradient} opacity-80`}
-                  />
-                  {/* Content */}
-                  <div className="absolute bottom-0 inset-0 p-6 flex flex-col justify-between">
-                    <div className="flex flex-col items-start gap-4">
-                      <div>
-                        <span className="px-2 py-1 text-xs font-semibold bg-white/10 backdrop-blur-md text-white rounded-full">
-                          {project.category}
+        <div className="flex flex-col gap-24">
+          {projects.map((project, index) => {
+            const isGradientDark = isDarkGradient(project.gradient);
+
+            return (
+              <Link href={`/projects/${project.id}`} key={project.id}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className={`flex flex-col ${
+                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  } gap-8 group cursor-pointer items-center`}
+                >
+                  {/* Image Container */}
+                  <div className="flex-1 relative w-full">
+                    <motion.div
+                      className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-lg transform-gpu transition-all duration-700 ease-out group-hover:shadow-xl"
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-700 z-10" />
+                      <Image
+                        src={project.image}
+                        alt={project.alt}
+                        fill
+                        className={`object-cover transition-transform duration-700 will-change-transform group-hover:scale-105 ${
+                          project.id === "1" ? "object-left" : ""
+                        }`}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        priority={index === 0}
+                      />
+                      <div
+                        className={`absolute inset-0  opacity-70 group-hover:opacity-60 transition-all duration-700`}
+                      />
+                      {/* Shine Effect */}
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-700 bg-gradient-to-r from-transparent via-white to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] z-20" />
+                    </motion.div>
+                    {/* Project Number with Adaptive Styling */}
+                    <div className="absolute -bottom-6 -left-6 z-20">
+                      <div className="relative">
+                        {/* Background number for depth */}
+                        <span
+                          className={`absolute -inset-1 text-8xl font-bold blur-[1px] select-none
+                            ${isGradientDark ? "text-white/20" : "text-black/10"}`}
+                        >
+                          {(index + 1).toString().padStart(2, "0")}
                         </span>
-                        <h3 className="text-3xl font-bold text-white mt-2">
-                          {project.title}
-                        </h3>
+                        {/* Main number with adaptive colors */}
+                        <span
+                          className={`relative text-8xl font-bold select-none
+                            ${
+                              isGradientDark ? "text-white/80" : "text-black/20"
+                            }`}
+                          style={{
+                            textShadow: isGradientDark
+                              ? "2px 2px 4px rgba(0, 0, 0, 0.3)"
+                              : "2px 2px 4px rgba(255, 255, 255, 0.3)",
+                          }}
+                        >
+                          {(index + 1).toString().padStart(2, "0")}
+                        </span>
                       </div>
-                      <p className="text-white/90">{project.description}</p>
-                      <span className="px-4 py-2 text-nowrap bg-white/10 backdrop-blur-md text-white rounded-full text-sm font-medium hover:bg-white/20 transition-colors">
-                        View Project
-                      </span>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            </Link>
-          ))}
+
+                  {/* Content Container */}
+                  <div className="flex-1 flex flex-col justify-center">
+                    <motion.div
+                      initial={{ opacity: 0, x: index % 2 === 0 ? 20 : -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      className="space-y-6"
+                    >
+                      <span className="px-4 py-1.5 text-sm font-normal bg-border text-black rounded-full inline-block">
+                        {project.category}
+                      </span>
+                      <h3 className="text-3xl md:text-4xl font-bold">
+                        {project.title}
+                      </h3>
+                      <p className="text-muted-foreground text-base leading-relaxed">
+                        {project.description}
+                      </p>
+                      <div className="">
+                        <span className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full text-sm font-medium hover:bg-black transition-colors group-hover:gap-4">
+                          View Project
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="transition-transform duration-300"
+                          >
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                          </svg>
+                        </span>
+                      </div>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

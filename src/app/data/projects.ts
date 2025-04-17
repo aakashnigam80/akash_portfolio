@@ -207,7 +207,7 @@ export const projects: Project[] = [
     category: "Website Development",
     description:
       "Designed and developed the official website for Palisades Security, showcasing their cybersecurity solutions and services.",
-    gradient: "from-blue-400 to-indigo-500",
+    gradient: "from-gray-900 to-black",
     image: "/images/Palisades.png",
     alt: "Palisades Project",
     details: {

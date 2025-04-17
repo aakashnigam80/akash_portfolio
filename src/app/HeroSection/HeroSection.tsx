@@ -136,18 +136,21 @@ export function HeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
-            Available Immediate
+            Open to Opportunities
           </Badge>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-medium tracking-tight text-black">
-            <span className="text-muted-foreground">Design that</span> delivers
-            results.
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-medium tracking-tight text-black">
+            <span className="text-muted-foreground">Crafting</span> digital
+            experiences that{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
+              inspire.
+            </span>
           </h1>
-          <div className="text-base text-black max-w-md font-semibold">
-            Strategic design that drives growth, not just looks good.
-            <div className="text-muted-foreground font-medium">
-              I create everything your brand needs to attract customers and turn
-              them into sales.
-            </div>
+          <div className="text-base text-black max-w-md font-normal">
+            Product Design Engineer specializing in Figma-to-Code excellence.
+            <span className="text-muted-foreground font-normal ml-1">
+              Building high-performance web apps with Next.js, React, and
+              AI-powered solutions that transform ideas into reality.
+            </span>
           </div>
           <SchedulingButton
             className="w-fit rounded-full bg-black text-white hover:bg-gray-900 shadow-md text-sm transition-all duration-300 ease-in-out group overflow-hidden"
