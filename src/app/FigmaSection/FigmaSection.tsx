@@ -7,7 +7,7 @@ export const FigmaSection = () => {
   return (
     <div id="figma" className="border-x border-border max-w-6xl mx-auto">
       <div className="px-4 sm:px-6 py-8 sm:py-12 md:px-12 md:py-16 lg:px-14 lg:py-16">
-        <h2 className="text-3xl flex items-center gap-4 sm:text-4xl font-medium tracking-tight mb-8">
+        <h2 className="text-2xl flex items-center gap-4 sm:text-4xl font-medium tracking-tight mb-8">
           <Image
             src="/images/stack/figma.svg"
             alt="Figma"
