@@ -45,8 +45,8 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 items-start md:grid-cols-2 gap-8 px-6 py-12 md:px-12 md:py-16 lg:px-14">
+    <section className="w-full">
+      <div className="grid grid-cols-1 items-start md:grid-cols-2 gap-8">
         {/* Left Column: FAQ Questions */}
         <div className="space-y-6">
           <div className="space-y-4">
