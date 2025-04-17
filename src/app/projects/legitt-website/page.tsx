@@ -11,51 +11,73 @@ export default function LegittWebsitePage() {
     client: "Legitt AI",
     year: "2024",
     description:
-      "Designed and developed a modern website showcasing Legitt AI's innovative legal technology solutions and services.",
+      "I designed and developed a comprehensive website for Legitt AI, an innovative legal technology company. The project showcased my expertise in modern web development, responsive design, and creating engaging user experiences. The website effectively communicates Legitt AI's AI-powered contract management solutions while maintaining a professional and trustworthy aesthetic.",
     scopeOfWork: [
-      "Brand Identity",
-      "UI/UX Design",
+      "Modern UI/UX Design",
       "Responsive Development",
-      "Product Showcase",
-      "Lead Generation",
+      "Next.js Implementation",
+      "Interactive Features",
+      "Performance Optimization",
+      "SEO Implementation",
+      "Integration Setup",
     ],
-    liveSiteUrl: "#",
+    liveSiteUrl: "https://legittai.com",
   };
 
   const contentData = {
     sections: [
       {
-        title: "Homepage Design",
+        title: "Hero Section & Navigation",
         description:
-          "Modern and engaging homepage highlighting Legitt AI's core offerings and value proposition.",
+          "Developed a striking hero section featuring Legitt AI's core value proposition with an intuitive navigation system. Implemented smooth animations and responsive design to ensure optimal viewing across all devices.",
         images: [
           {
-            src: "/images/legitt-home.png",
-            alt: "Legitt AI Homepage",
+            src: "/images/legittai/hero.png",
+            alt: "Legitt AI Hero Section Design",
           },
         ],
         layout: "single" as const,
       },
       {
-        title: "Product Features",
+        title: "Product Features Showcase",
         description:
-          "Interactive showcase of Legitt AI's key products and features.",
+          "Created an engaging product features section using modern design principles and interactive elements. Implemented custom animations and transitions to highlight key features and benefits.",
         images: [
           {
-            src: "/images/legitt-features.png",
-            alt: "Legitt AI Product Features",
+            src: "/images/legittai/image2.png",
+            alt: "Product Features Section",
+          },
+          {
+            src: "/images/legittai/image3.png",
+            alt: "Features Showcase",
           },
         ],
-        layout: "single" as const,
+        layout: "double" as const,
       },
       {
-        title: "Solutions Overview",
+        title: "Solutions & Integration Section",
         description:
-          "Comprehensive overview of legal technology solutions offered by Legitt AI.",
+          "Designed and developed a comprehensive solutions section showcasing Legitt AI's various offerings. Built custom components for partner integrations and security certifications display.",
         images: [
           {
-            src: "/images/legitt-solutions.png",
-            alt: "Legitt AI Solutions",
+            src: "/images/legittai/image4.png",
+            alt: "Solutions Section",
+          },
+          {
+            src: "/images/legittai/image5.png",
+            alt: "Integration Section",
+          },
+        ],
+        layout: "double" as const,
+      },
+      {
+        title: "Lead Generation & Contact",
+        description:
+          "Implemented conversion-optimized contact forms and demo request sections. Created an interactive FAQ section and testimonials showcase to build trust and credibility.",
+        images: [
+          {
+            src: "/images/legittai/image6.png",
+            alt: "Contact and Lead Generation Section",
           },
         ],
         layout: "single" as const,
@@ -65,11 +87,11 @@ export default function LegittWebsitePage() {
 
   const testimonialData = {
     quote:
-      "The new website perfectly captures our vision and has significantly improved our online presence. The modern design and intuitive navigation have helped us better connect with our target audience.",
+      "The website perfectly embodies our vision and has significantly enhanced our online presence. The developer's attention to detail, technical expertise, and understanding of our needs resulted in a modern, high-performing website that effectively communicates our value proposition.",
     author: {
-      name: "Marketing Team",
-      role: "Legitt AI",
-      image: "/images/legitt-team.png",
+      name: "Legitt AI Team",
+      role: "Management",
+      image: "/images/legittai/hero.png",
     },
   };
 

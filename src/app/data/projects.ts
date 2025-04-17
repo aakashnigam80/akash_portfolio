@@ -321,126 +321,257 @@ export const projects: Project[] = [
       ],
     },
   },
-  // {
-  //   id: "legitt-website",
-  //   title: "Legitt AI Website",
-  //   category: "Website Development",
-  //   description:
-  //     "Developed the official website for Legitt AI platform, showcasing their AI-powered legal document analysis and management solutions.",
-  //   gradient: "from-green-500 to-teal-600",
-  //   image: "/images/legitt.png",
-  //   alt: "Legitt Project",
-  //   details: {
-  //     overview:
-  //       "Created an engaging website for Legitt AI that demonstrates their innovative approach to legal document management and analysis using artificial intelligence.",
-  //     features: [
-  //       "Product Demo: Implemented interactive AI features showcase",
-  //       "Use Cases: Developed industry-specific solution sections",
-  //       "Integration Guide: Created technical documentation section",
-  //       "Pricing Plans: Built dynamic pricing comparison tool",
-  //       "Blog Platform: Integrated content management system",
-  //     ],
-  //     technologies: [
-  //       "Next.js",
-  //       "TypeScript",
-  //       "Tailwind CSS",
-  //       "Strapi CMS",
-  //       "Stripe",
-  //     ],
-  //     sections: [
-  //       {
-  //         title: "Platform Overview",
-  //         content:
-  //           "Showcasing Legitt AI's innovative approach to legal document management.",
-  //         images: [
-  //           {
-  //             src: "/images/legitt.png",
-  //             alt: "Legitt AI Platform Overview",
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         title: "Features and Capabilities",
-  //         content:
-  //           "Detailed presentation of AI-powered features and document analysis capabilities.",
-  //         images: [
-  //           {
-  //             src: "/images/legitt-features.png",
-  //             alt: "Legitt AI Features",
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         title: "Pricing and Plans",
-  //         content:
-  //           "Transparent pricing structure with various plans for different business needs.",
-  //         images: [
-  //           {
-  //             src: "/images/legitt-pricing.png",
-  //             alt: "Legitt AI Pricing Plans",
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
-  // },
-  // {
-  //   id: "legitt-esign",
-  //   title: "Legitt AI Esign",
-  //   category: "E-Signature",
-  //   description:
-  //     "Built a secure and intelligent electronic signature solution with AI-powered document analysis.",
-  //   gradient: "from-orange-500 to-red-600",
-  //   image: "/images/legitt.png",
-  //   alt: "Legitt Project",
-  //   details: {
-  //     overview:
-  //       "Developed an advanced e-signature platform that combines secure document signing with AI-powered contract analysis and validation.",
-  //     features: [
-  //       "Smart Signing: Implemented AI-guided signature placement",
-  //       "Document Analysis: Built automated document verification",
-  //       "Multi-party Signing: Created workflow for multiple signers",
-  //       "Template Management: Developed reusable template system",
-  //       "Audit Trail: Implemented detailed signing activity logs",
-  //     ],
-  //     technologies: ["React", "Python", "TensorFlow", "AWS", "Blockchain"],
-  //     sections: [
-  //       {
-  //         title: "E-Signature Interface",
-  //         content:
-  //           "Intuitive interface for secure document signing with AI-guided placement.",
-  //         images: [
-  //           {
-  //             src: "/images/legitt-esign.png",
-  //             alt: "Legitt E-Signature Interface",
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         title: "Signing Workflow",
-  //         content:
-  //           "Streamlined process for multi-party document signing and verification.",
-  //         images: [
-  //           {
-  //             src: "/images/legitt-signing.png",
-  //             alt: "Document Signing Workflow",
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         title: "Template Management",
-  //         content:
-  //           "System for creating and managing reusable document templates.",
-  //         images: [
-  //           {
-  //             src: "/images/legitt-templates.png",
-  //             alt: "Template Management System",
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
-  // },
+  {
+    id: "legitt-website",
+    title: "Legitt AI Website",
+    category: "Website Development",
+    description:
+      "Developed the official website for Legitt AI platform, showcasing their AI-powered legal document analysis and management solutions.",
+    gradient: "from-green-500 to-teal-600",
+    image: "/images/legitt.png",
+    alt: "Legitt Project",
+    details: {
+      overview:
+        "Created an engaging website for Legitt AI that demonstrates their innovative approach to legal document management and analysis using artificial intelligence.",
+      features: [
+        "Product Demo: Implemented interactive AI features showcase",
+        "Use Cases: Developed industry-specific solution sections",
+        "Integration Guide: Created technical documentation section",
+        "Pricing Plans: Built dynamic pricing comparison tool",
+        "Blog Platform: Integrated content management system",
+      ],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Strapi CMS",
+        "Stripe",
+      ],
+      sections: [
+        {
+          title: "Platform Overview",
+          content:
+            "Showcasing Legitt AI's innovative approach to legal document management.",
+          images: [
+            {
+              src: "/images/legitt.png",
+              alt: "Legitt AI Platform Overview",
+            },
+          ],
+        },
+        {
+          title: "Features and Capabilities",
+          content:
+            "Detailed presentation of AI-powered features and document analysis capabilities.",
+          images: [
+            {
+              src: "/images/legitt-features.png",
+              alt: "Legitt AI Features",
+            },
+          ],
+        },
+        {
+          title: "Pricing and Plans",
+          content:
+            "Transparent pricing structure with various plans for different business needs.",
+          images: [
+            {
+              src: "/images/legitt-pricing.png",
+              alt: "Legitt AI Pricing Plans",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: "legitt-app",
+    title: "Legitt AI Application",
+    category: "SaaS Platform",
+    description:
+      "Developed a sophisticated AI-powered contract lifecycle management platform with features for contract creation, analysis, and workflow automation.",
+    gradient: "from-blue-600 to-cyan-500",
+    image: "/images/legitt-app/dashboard.png",
+    alt: "Legitt AI Application Dashboard",
+    details: {
+      overview:
+        "I developed Legitt AI's core application platform, a sophisticated contract lifecycle management system powered by artificial intelligence. This comprehensive solution streamlines contract creation, management, and analysis while incorporating advanced AI features for automated contract generation, review, and insights.",
+      features: [
+        "AI Contract Generation: Built smart contract creation system with GPT integration",
+        "Real-time Analytics: Implemented dashboard with WebSocket updates",
+        "Lead Management: Developed automated workflow system",
+        "Document Repository: Created advanced search and filtering system",
+        "Reporting System: Built customizable analytics dashboard",
+        "Alert System: Implemented real-time notification framework",
+        "User Authentication: Developed secure multi-role access system",
+        "API Integration: Built robust REST API architecture",
+      ],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "OpenAI API",
+        "WebSocket",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+      ],
+      sections: [
+        {
+          title: "Smart Dashboard & Analytics",
+          content:
+            "Engineered an intuitive dashboard that provides real-time insights into contract status, pending tasks, and key metrics. Implemented advanced data visualization components and real-time updates using WebSocket technology.",
+          images: [
+            {
+              src: "/images/legitt-app/dashboard.png",
+              alt: "Legitt AI Dashboard Interface",
+            },
+          ],
+        },
+        {
+          title: "AI-Powered Contract Creation",
+          content:
+            "Developed an advanced AI-powered contract generation system that allows users to create contracts intelligently. Integrated OpenAI's GPT models for smart contract drafting and implemented a user-friendly interface for template customization.",
+          images: [
+            {
+              src: "/images/legitt-app/create-contract-with-ai.png",
+              alt: "AI Contract Creation Interface",
+            },
+            {
+              src: "/images/legitt-app/create.png",
+              alt: "Contract Creation Flow",
+            },
+          ],
+        },
+        {
+          title: "Lead Management & Workflow",
+          content:
+            "Built a comprehensive lead management system with automated workflow capabilities. Implemented features for lead creation, tracking, and conversion optimization with real-time notifications and status updates.",
+          images: [
+            {
+              src: "/images/legitt-app/create-lead.png",
+              alt: "Lead Management Interface",
+            },
+            {
+              src: "/images/legitt-app/my-work.png",
+              alt: "Work Management Dashboard",
+            },
+          ],
+        },
+        {
+          title: "Contract Repository & Analytics",
+          content:
+            "Designed and implemented a sophisticated contract repository with advanced search and filtering capabilities. Integrated analytics tools for contract performance monitoring and automated alerts system for critical updates.",
+          images: [
+            {
+              src: "/images/legitt-app/repository.png",
+              alt: "Contract Repository",
+            },
+            {
+              src: "/images/legitt-app/alerts.png",
+              alt: "Alerts System",
+            },
+          ],
+        },
+        {
+          title: "Reporting & Insights",
+          content:
+            "Developed a comprehensive reporting system with customizable dashboards and exportable reports. Implemented data visualization components and real-time analytics for business intelligence.",
+          images: [
+            {
+              src: "/images/legitt-app/reports.png",
+              alt: "Reports and Analytics Dashboard",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: "legitt-esign",
+    title: "Legitt AI E-Signature Platform",
+    category: "E-Signature Platform",
+    description:
+      "Engineered a sophisticated electronic signature platform with AI-powered document analysis, smart signature placement, and secure multi-party signing workflows.",
+    gradient: "from-orange-500 to-red-600",
+    image: "/images/legitt-esign/hero.png",
+    alt: "Legitt E-Signature Platform",
+    details: {
+      overview:
+        "Developed an advanced e-signature platform that combines secure document signing with AI-powered analysis and blockchain-based security. The platform features smart document processing, intuitive signature workflows, and comprehensive audit trails.",
+      features: [
+        "AI Document Analysis: Implemented smart field detection and validation",
+        "Blockchain Security: Built secure audit trail using blockchain",
+        "Multi-party Workflow: Created role-based signing process",
+        "Smart Editor: Developed AI-guided signature placement",
+        "Real-time Tracking: Implemented WebSocket-based status updates",
+        "Security Features: Added digital certificates and biometric verification",
+        "Cloud Integration: Built scalable document storage system",
+        "API Development: Created comprehensive REST API for integrations",
+      ],
+      technologies: [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "WebSocket",
+        "Blockchain",
+        "AWS",
+        "Docker",
+        "OpenAI API",
+      ],
+      sections: [
+        {
+          title: "Modern E-Signature Platform",
+          content:
+            "Developed a state-of-the-art electronic signature platform that combines advanced security features with an intuitive user interface. The platform supports multiple signing methods, document types, and automated workflows.",
+          images: [
+            {
+              src: "/images/legitt-esign/hero.png",
+              alt: "Legitt E-Signature Platform Overview",
+            },
+          ],
+        },
+        {
+          title: "Smart Document Upload & Analysis",
+          content:
+            "Developed an intelligent document upload system with real-time AI analysis. Implemented secure file handling, automatic document type detection, and smart field recognition for efficient processing.",
+          images: [
+            {
+              src: "/images/legitt-esign/document-upload.png",
+              alt: "Smart Document Upload Interface",
+            },
+          ],
+        },
+        {
+          title: "Multi-Party Signing Workflow",
+          content:
+            "Engineered a secure and intuitive multi-party signing workflow with role-based access control. Implemented real-time status tracking, automated notifications, and blockchain-based audit trails for enhanced security.",
+          images: [
+            {
+              src: "/images/legitt-esign/singee-detail-redirect.png",
+              alt: "Multi-Party Signing Workflow",
+            },
+          ],
+        },
+        {
+          title: "Advanced Signature Editor",
+          content:
+            "Built a sophisticated signature editor with AI-guided placement suggestions. Integrated drawing capabilities, signature validation, and multiple signing methods including digital certificates and biometric verification.",
+          images: [
+            {
+              src: "/images/legitt-esign/sign-editor.png",
+              alt: "Advanced Signature Editor Interface",
+            },
+            {
+              src: "/images/legitt-esign/sign-block.png",
+              alt: "Signature Block Configuration",
+            },
+          ],
+        },
+      ],
+    },
+  },
+
   // {
   //   id: "legitt-proposal",
   //   title: "Legitt AI Proposal & Contract",
