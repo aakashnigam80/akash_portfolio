@@ -42,7 +42,7 @@ export function SchedulingButton({
       asChild
       size={size}
       variant={variant}
-      className={`w-fit rounded-full bg-black text-white hover:bg-gray-900 shadow-md text-sm transition-all duration-300 ease-in-out group overflow-hidden ${className}`}
+      className={`w-fit rounded-full bg-black border text-white hover:bg-white hover:border hover:border-black shadow-md text-sm transition-all duration-300 ease-in-out group overflow-hidden ${className}`}
       data-cal-namespace="30min"
       data-cal-link="akash-nigam09/30min"
       data-cal-config='{"layout":"month_view","theme":"light"}'
@@ -59,8 +59,10 @@ export function SchedulingButton({
         )}
         {showPlusYou && (
           <div className="flex items-center max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 transition-all duration-800 ease-in-out overflow-hidden whitespace-nowrap">
-            <span className="mr-2 text-white font-medium">+</span>
-            <span className="bg-white text-black rounded-full w-7 h-7 flex items-center justify-center text-xs font-semibold mr-2">
+            <span className="mr-2 text-white group-hover:text-black font-medium">
+              +
+            </span>
+            <span className="bg-black text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-semibold mr-2">
               You
             </span>
           </div>
@@ -87,7 +89,7 @@ export function SchedulingButton({
           </>
         )}
         {!showCalendarIcon && (
-          <span className="group-hover:ml-0 transition-all duration-300 ease-in-out whitespace-nowrap">
+          <span className="group-hover:ml-0 group-hover:text-black  transition-all duration-300 ease-in-out whitespace-nowrap">
             {text}
           </span>
         )}

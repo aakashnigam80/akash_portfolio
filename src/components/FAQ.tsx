@@ -121,10 +121,10 @@ const FAQ = () => {
               <SchedulingButton
                 size="default"
                 variant="default"
-                className="px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors"
+                className="px-6 py-3 rounded-full  transition-colors"
                 showProfileImage={false}
                 showPlusYou={false}
-                text="Schedule Now"
+                text="Schedule now"
               />
             </div>
           </div>

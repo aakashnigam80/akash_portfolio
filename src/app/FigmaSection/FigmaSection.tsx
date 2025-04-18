@@ -15,7 +15,7 @@ export const FigmaSection = () => {
             height={70}
             className="-ml-4"
           />
-          Latest Design Work
+          Latest design work
         </h2>
         <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl mb-12">
           Explore my design process and UI/UX work directly in Figma. This

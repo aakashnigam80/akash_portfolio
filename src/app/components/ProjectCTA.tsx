@@ -92,7 +92,7 @@ const ProjectCTA = () => {
             size="lg"
             showProfileImage={true}
             showPlusYou={true}
-            text="Schedule Now"
+            text="Schedule now"
           />
         </div>
       </div>

@@ -123,8 +123,8 @@ export function ProjectsSection() {
                         {project.description}
                       </p>
                       <div className="">
-                        <span className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-black text-white rounded-full text-xs sm:text-sm font-medium hover:bg-black transition-colors group-hover:gap-4">
-                          View Project
+                        <span className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-black text-white rounded-full text-xs sm:text-sm font-medium border hover:bg-white hover:text-black hover:border-muted-foreground hover:shadow-lg transition-all duration-300 group-hover:gap-4">
+                          View project
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"

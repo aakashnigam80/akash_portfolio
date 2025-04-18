@@ -152,11 +152,7 @@ export function HeroSection() {
               AI-powered solutions that transform ideas into reality.
             </span>
           </div>
-          <SchedulingButton
-            className="w-fit rounded-full bg-black text-white hover:bg-gray-900 shadow-md text-xs sm:text-sm transition-all duration-300 ease-in-out group overflow-hidden"
-            showProfileImage={true}
-            showPlusYou={true}
-          />
+          <SchedulingButton showProfileImage={true} showPlusYou={true} />
         </div>
 
         {/* Right Column: Image Composition */}
