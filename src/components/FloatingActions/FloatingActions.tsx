@@ -47,7 +47,7 @@ export function FloatingActions({ isVisible }: FloatingActionsProps) {
             <div className="flex items-center justify-center gap-2">
               <button
                 onClick={() => setIsContactOpen(true)}
-                className="flex items-center justify-center rounded-full bg-black text-white hover:bg-black/90 transition-all overflow-hidden relative"
+                className="flex items-center justify-center rounded-full bg-black text-white hover:bg-white hover:text-black hover:border hover:border-black transition-all overflow-hidden relative"
                 style={{
                   width: isHovered ? "130px" : "38px",
                   height: "38px",

@@ -42,7 +42,7 @@ export function SchedulingButton({
       asChild
       size={size}
       variant={variant}
-      className={`w-fit rounded-full bg-black border text-white hover:bg-white hover:border hover:border-black shadow-md text-sm transition-all duration-300 ease-in-out group overflow-hidden ${className}`}
+      className={`w-fit rounded-full bg-black border text-white hover:text-black hover:bg-white hover:border hover:border-black shadow-md text-sm transition-all duration-300 ease-in-out group overflow-hidden ${className}`}
       data-cal-namespace="30min"
       data-cal-link="akash-nigam09/30min"
       data-cal-config='{"layout":"month_view","theme":"light"}'
